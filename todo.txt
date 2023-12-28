@@ -1,0 +1,35 @@
+[ ] - Give a room id make a tiny url for this link as short possible
+
+# Example 
+
+Give https://promoindica/oferta/tenis-adidas-show-maker-<identificador_aqui>
+Response https://promoindica.redirect/b
+
+# Requirements
+
+1. Service should be able to create shortened url/links against a long url
+2. Click to the short URL should redirect the user to the original long URL
+3. Shortened link should be as small as possible
+4. The url should based with a unique ID
+5. Service should collect metrics like most clicked links
+6. Once a shortened link is generated it should stay in system for lifetime
+
+Data Related to ShortLink
+
+1. Short Url: 6/7 character long unique short URL
+2. Original Url: The original long URL
+3. offer_data: The unique user id or API key of the user who created the short URL
+
+Main requirement: I want to perfom analitic operations based on click relationed a product.
+
+# Thinking
+-> based o offer id 
+example 
+1, 2, 3, 4 how to make the reverse base62 to Decimal
+
+# Extra Features
+- [ ] - Count the number of clicks on the short URL
+- [ ] - Make the relation between the short url and the offer id
+- [ ] - Write unit tests
+- [ ] - Write integration tests
+- [ ] - Benchmark the service for performance (With and without cache)
